@@ -9,11 +9,11 @@ public class PruebaCuenta
         Cuenta cuenta1 = new Cuenta("Jane Green", 50.00);
         Cuenta cuenta2 = new Cuenta("Jhon Blue", -7.53);
         
-        //cuenta1.mostrarCuenta(Cuenta cuenta1);
+        //Se invoca a mostrarCuenta
         PruebaCuenta.mostrarCuenta(cuenta1);
         PruebaCuenta.mostrarCuenta(cuenta2);
         
-        //Crea un objeto Scanner para obtener la entrada de la ventan de comandos
+        //Crea un objeto Scanner para obtener la entrada de la ventana de comandos
         Scanner entrada = new Scanner(System.in);
         
         System.out.print("Escriba el monto a depositar para la cuenta1: ");
@@ -22,6 +22,7 @@ public class PruebaCuenta
                 montoDeposito);
         cuenta1.depositar(montoDeposito);   //suma al saldo de cuenta1
         
+        //Se invoca a mostrarCuenta
         PruebaCuenta.mostrarCuenta(cuenta1);
         PruebaCuenta.mostrarCuenta(cuenta2);
         
@@ -31,6 +32,7 @@ public class PruebaCuenta
                 montoDeposito);
         cuenta2.depositar(montoDeposito);   //suma al saldo de cuenta2
         
+        //Se invoca a mostrarCuenta
         PruebaCuenta.mostrarCuenta(cuenta1);
         PruebaCuenta.mostrarCuenta(cuenta2);
         
